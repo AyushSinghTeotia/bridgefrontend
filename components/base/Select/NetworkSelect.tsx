@@ -20,8 +20,8 @@ export interface Option {
 }
 
 export const options: Option[] = [
-    { value: ChainTypes.erc20, label: "Ethereum network (ERC20)", bridgeAddress: process.env.NEXT_PUBLIC_BRIDGE_ETH_ADDRESS || '', tokenAddress: process.env.NEXT_PUBLIC_CAPS_TOKEN_ADDRESS_ETH || '' },
-    { value: ChainTypes.bep20, label: "Binance Smart Chain (BEP20)", bridgeAddress: process.env.NEXT_PUBLIC_BRIDGE_BSC_ADDRESS || '', tokenAddress: process.env.NEXT_PUBLIC_CAPS_TOKEN_ADDRESS_BSC || '' }
+    { value: ChainTypes.erc20, label: "Ethereum network (ERC20)", bridgeAddress: process.env.NEXT_PUBLIC_BRIDGE_ETH_ADDRESS || '0x100FC43A9D12Ee44CA028B531FD0EeaB632e31A9', tokenAddress: process.env.NEXT_PUBLIC_CAPS_TOKEN_ADDRESS_ETH || '0x70025695A7c4d50315b01Ed7309FcbD8353d3944' },
+    { value: ChainTypes.bep20, label: "Binance Smart Chain (BEP20)", bridgeAddress: process.env.NEXT_PUBLIC_BRIDGE_BSC_ADDRESS || '0x36a544B6adc9Ffa5001Ff38d6DF8D2582Cc9f143', tokenAddress: process.env.NEXT_PUBLIC_CAPS_TOKEN_ADDRESS_BSC || '0xA1f2140F36A2Cf8dc34811416F26B28DA2819ef9' }
 ]
 
 export interface NetworkSelectProps {
@@ -87,6 +87,62 @@ const NetworkSelect: React.FC<NetworkSelectProps> = ({ selected, handleChange, i
                     </div>
                 </div>
             </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
         </ClickAwayListener>
     )
 }

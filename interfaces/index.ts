@@ -18,3 +18,4 @@ export interface UserWallet {
     capsAmount?: string | number
     signer : Signer
 }
+

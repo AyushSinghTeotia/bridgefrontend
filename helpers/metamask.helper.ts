@@ -26,15 +26,15 @@ export const addSwitchBSCNetwork = async () => {
         method: 'wallet_addEthereumChain',
         params: [
             {
-                "chainId": "0x38", //56 in decimal
-                "chainName": "Binance Smart Chain",
-                "rpcUrls": ["https://bsc-dataseed.binance.org/"],
+                "chainId": "0x61", //97 in decimal
+                "chainName": "Smart Chain - Testnet",
+                "rpcUrls": ["https://data-seed-prebsc-1-s1.binance.org:8545/"],
                 "nativeCurrency": {
                     "name": "BNB",
                     "symbol": "BNB",
                     "decimals": 18
                 },
-                "blockExplorerUrls": ["https://bscscan.com"]
+                "blockExplorerUrls": ["https://testnet.bscscan.com"]
                 }
         ]
     });

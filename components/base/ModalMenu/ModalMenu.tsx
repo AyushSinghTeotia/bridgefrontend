@@ -51,7 +51,7 @@ const ModalMenu: React.FC<ModalMenuProps> = ({ modalMenuOpen, setModalMenuOpen, 
                                         {userWallet.networkType==="walletconnect" ? <WalletConnect/> : <Metamask/>}
                                         <span className={style.network}>
                                             {`${userWallet.chainType===ChainTypes.erc20 ? 
-                                                    "Ethereum" 
+                                                    "Rinkeby" 
                                                 : 
                                                     userWallet.chainType===ChainTypes.bep20 ?
                                                         "Binance"

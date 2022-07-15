@@ -48,6 +48,7 @@ const HomeConnected: React.FC<HomeConnectedProps> = () => {
     const userWalletAddress = userWallet ? userWallet.address : null
     const minCapsToSwap = 200
     const maxCapsToSwap = 100000
+   
     const isAbleToSwap = capsToSwap && userWallet && userWallet.capsAmount && capsToSwap >= minCapsToSwap && capsToSwap <= userWallet.capsAmount && capsToSwap <= maxCapsToSwap
     let maskedTextInput: any = null;
     const updateProviderBalance = async () => {
@@ -87,6 +88,7 @@ const HomeConnected: React.FC<HomeConnectedProps> = () => {
         }
     }
     const handleNext = () => {
+        console.log("chaintype",userWallet.chaintype);
         if (isAbleToSwap) {
             if (selectedOptionFrom?.value !== userWallet.chainType) {
                 setWarningSelectedNetworkFromOpen(true)

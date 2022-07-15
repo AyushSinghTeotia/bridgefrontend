@@ -3,8 +3,8 @@ import { Contract, ethers, Signer } from "ethers"
 import { ChainTypes, NetworkType } from "interfaces";
 import { walletProvider } from "./wallet-connect.helper";
 
-const ETH_CHAIN_ID = 1
-const BSC_CHAIN_ID = 56
+const ETH_CHAIN_ID = 4
+const BSC_CHAIN_ID = 97
 
 export const mapSignerAsWallet = async (signer: Signer, networkType: NetworkType) => {
     const chainId = await signer.getChainId()
@@ -63,9 +63,9 @@ const contractAbi = [
 ];
 export const getDefaultProviderNetwork = (network: Option | null) => {
     switch (network?.value) {
-        case ChainTypes.bep20: return 'https://bsc-dataseed.binance.org/'
+        case ChainTypes.bep20: return 'https://data-seed-prebsc-2-s1.binance.org:8545/'
         default:
-            return 'https://mainnet.infura.io/v3/d7ba724d1621497aaacdbc03b1094a2e'
+            return 'https://rinkeby.infura.io/v3/30f167335d144de5a065c80111891242'
     }
 }
 export const getProviderBalance = async (signer: Signer, network: Option | null) => {

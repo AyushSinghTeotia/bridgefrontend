@@ -62,7 +62,7 @@ const MainHeader: React.FC<HeaderProps> = ({ setConnectModalOpen, isWindowEthAva
                                             <div className={"row"}>
                                                 <span className={style.network}>
                                                     {`${userWallet.chainType===ChainTypes.erc20 ? 
-                                                        "Ethereum" 
+                                                        "Rinkeby Test Network" 
                                                     : 
                                                         userWallet.chainType===ChainTypes.bep20 ?
                                                             "Binance"
